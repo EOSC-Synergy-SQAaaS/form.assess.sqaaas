@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/vermaseren/form git:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-cyan-monster.sh
-        container: qc.acc_frumpy-rose-crane
+        - /usr/bin/env sh .sqa/script.clammy-azure-frigatebird.sh
+        container: qc.acc_gloppy-beige-frise
   QC.Doc:
     repos:
       github.com/vermaseren/form find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-chartreuse-stoat.sh
-        container: qc.doc_wiggy-apricot-bat
+        - /usr/bin/env sh .sqa/script.wiggy-auburn-woodlouse.sh
+        container: qc.doc_gummy-cerise-tang
       github.com/vermaseren/form git:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-asparagus-flamingo.sh
-        container: qc.doc_nerdy-dandelion-barnacle
+        - /usr/bin/env sh .sqa/script.silly-turquoise-hound.sh
+        container: qc.doc_pokey-vermilion-tetra
       github.com/vermaseren/form markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-khaki-gecko.sh
-        container: qc.doc_sleazy-wisteria-donkey
+        - /usr/bin/env sh .sqa/script.chewy-corn-coral.sh
+        container: qc.doc_whiny-malachite-guppy
   QC.Lic:
     repos:
       github.com/vermaseren/form licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-cerise-bee.sh
-        container: qc.lic_seedy-russet-opossum
+        - /usr/bin/env sh .sqa/script.goopy-saffron-russel.sh
+        container: qc.lic_pasty-buff-squirt
   QC.Sty:
     repos:
       github.com/vermaseren/form rubocop:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-taupe-macaw.sh
-        container: qc.sty_slaphappy-linen-fousek
+        - /usr/bin/env sh .sqa/script.sleepy-chocolate-tetra.sh
+        container: qc.sty_lanky-vermilion-oriole
   QC.Ver:
     repos:
       github.com/vermaseren/form get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-grey-affenpinscher.sh
-        container: qc.ver_gummy-magenta-chimpanzee
+        - /usr/bin/env sh .sqa/script.nerdy-ultramarine-crane.sh
+        container: qc.ver_homey-brown-eel
 timeout: 1800
