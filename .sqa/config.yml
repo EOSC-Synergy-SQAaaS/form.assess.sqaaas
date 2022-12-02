@@ -1,0 +1,52 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.7
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/vermaseren/form:
+      branch: master
+      repo: https://github.com/vermaseren/form
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/vermaseren/form git:
+        commands:
+        - /usr/bin/env sh .sqa/script.muzzy-cyan-monster.sh
+        container: qc.acc_frumpy-rose-crane
+  QC.Doc:
+    repos:
+      github.com/vermaseren/form find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.zippy-chartreuse-stoat.sh
+        container: qc.doc_wiggy-apricot-bat
+      github.com/vermaseren/form git:
+        commands:
+        - /usr/bin/env sh .sqa/script.paltry-asparagus-flamingo.sh
+        container: qc.doc_nerdy-dandelion-barnacle
+      github.com/vermaseren/form markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.scanty-khaki-gecko.sh
+        container: qc.doc_sleazy-wisteria-donkey
+  QC.Lic:
+    repos:
+      github.com/vermaseren/form licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.paltry-cerise-bee.sh
+        container: qc.lic_seedy-russet-opossum
+  QC.Sty:
+    repos:
+      github.com/vermaseren/form rubocop:
+        commands:
+        - /usr/bin/env sh .sqa/script.crabby-taupe-macaw.sh
+        container: qc.sty_slaphappy-linen-fousek
+  QC.Ver:
+    repos:
+      github.com/vermaseren/form get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.scummy-grey-affenpinscher.sh
+        container: qc.ver_gummy-magenta-chimpanzee
+timeout: 1800
