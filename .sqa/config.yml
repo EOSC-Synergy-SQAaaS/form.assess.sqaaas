@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/vermaseren/form git:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-azure-frigatebird.sh
-        container: qc.acc_gloppy-beige-frise
+        - /usr/bin/env sh .sqa/script.zippy-champagne-llama.sh
+        container: qc.acc_stealthy-aquamarine-shrimp
   QC.Doc:
     repos:
       github.com/vermaseren/form find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-auburn-woodlouse.sh
-        container: qc.doc_gummy-cerise-tang
+        - /usr/bin/env sh .sqa/script.hasty-harlequin-loon.sh
+        container: qc.doc_sloppy-wisteria-hamster
       github.com/vermaseren/form git:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-turquoise-hound.sh
-        container: qc.doc_pokey-vermilion-tetra
+        - /usr/bin/env sh .sqa/script.beady-champagne-jackal.sh
+        container: qc.doc_pasty-taupe-ragdoll
       github.com/vermaseren/form markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-corn-coral.sh
-        container: qc.doc_whiny-malachite-guppy
+        - /usr/bin/env sh .sqa/script.sickly-emerald-toucan.sh
+        container: qc.doc_bluesy-saffron-monster
   QC.Lic:
     repos:
       github.com/vermaseren/form licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-saffron-russel.sh
-        container: qc.lic_pasty-buff-squirt
+        - /usr/bin/env sh .sqa/script.shaggy-celadon-cheetah.sh
+        container: qc.lic_crappy-apricot-chinook
   QC.Sty:
     repos:
       github.com/vermaseren/form rubocop:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-chocolate-tetra.sh
-        container: qc.sty_lanky-vermilion-oriole
+        - /usr/bin/env sh .sqa/script.lousy-salmon-chamois.sh
+        container: qc.sty_beady-taupe-fish
   QC.Ver:
     repos:
       github.com/vermaseren/form get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-ultramarine-crane.sh
-        container: qc.ver_homey-brown-eel
+        - /usr/bin/env sh .sqa/script.gamy-charcoal-llama.sh
+        container: qc.ver_snappy-amber-llama
 timeout: 1800
